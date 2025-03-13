@@ -2,6 +2,7 @@
 layout : default
 title : Friends
 ---
+
 # friends page
 
 Berikut Teman-Teman saya di kelas :
