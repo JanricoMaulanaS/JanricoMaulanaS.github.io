@@ -114,39 +114,10 @@ footer {
     font-size: 18px;
   }
 }
+
 img {
   max-width: 100%;
   height: auto;
-}
-
-h1 {
-  text-align: center;
-  color: #333;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  font-size: 18px;
-  padding: 10px;
-  margin: 5px 0;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-li a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-}
-
-li a:hover {
-  text-decoration: underline;
-  color: #0056b3;
 }
 
 /*# sourceMappingURL=styles.css.map */
