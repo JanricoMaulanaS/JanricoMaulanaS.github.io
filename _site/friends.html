@@ -3,16 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>friends</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            padding: 10px;
+            position: fixed; /* Navbar tetap di atas */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        /* Tambahkan padding agar konten tidak tertutup navbar */
+        .content {
+            padding-top: 60px;
+        }
+        
+    </style>
 </head>
 <body>
-    <nav>
-    <a href="/">Home</a>
-    <a href="/friends.html">friends</a>
-</nav>
-    <h1 id="friends-page">Friends Page</h1>
-
-<p>Berikut teman-teman saya di kelas:</p>
+    <div class="navbar">
+    
+    <a href="/" >Home</a>
+    
+    <a href="/friends.html" class="current">Friends</a>
+    
+    <a href="/blog.html" >Blog</a>
+    
+</div>
+    <h1 id="friends">Friends</h1>
+<h4>Berikut teman-teman saya di kelas:</h4>
 
 <ol>
   <li><a href="https://ahmadfayyadh.github.io/">Ahmad Fayyadh</a></li>
@@ -45,5 +83,23 @@
   <li><a href="https://addairabi.github.io/">T. Ahmad Addairabi Asyafi’ie</a></li>
 </ol>
 
+    <footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <p>&copy; 2025 JanricoMaulanaS. All Rights Reserved.</p>
+            <div class="footer-social">
+                <a href="https://github.com/JanricoMaulanaS" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/janrico-maulana-sofyan" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com/ricoo.maulana" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

@@ -1,11 +1,10 @@
 ---
 layout: default
-titles: friends
+title: friends
 ---
 
-# Friends Page
-
-Berikut teman-teman saya di kelas:
+# Friends
+<h4>Berikut teman-teman saya di kelas:</h4>
 
 1. [Ahmad Fayyadh](https://ahmadfayyadh.github.io/)
 2. [Al Anisa Maharani](https://alanisamaharani.github.io/)
