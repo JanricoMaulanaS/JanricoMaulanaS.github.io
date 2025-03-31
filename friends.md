@@ -4,7 +4,7 @@ title: friends
 ---
 
 # Friends
-<h4>Berikut teman-teman saya di kelas:</h4>
+Berikut teman-teman saya di kelas:
 
 1. [Ahmad Fayyadh](https://ahmadfayyadh.github.io/)
 2. [Al Anisa Maharani](https://alanisamaharani.github.io/)
