@@ -1,19 +1,5 @@
 <div class="navbar">
-<<<<<<< HEAD
     {% for item in site.data.navigation %}
-    <a href="{{item.link}}" {% if page.url == item.link %}class="current"{% endif %}>
-     {{ item.name }}   
-    </a>
+    <a href="{{item.link}}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
     {% endfor %}
-=======
-    {% if site.data.navigation %}
-        {% for item in site.data.navigation %}
-            {% if item.link and item.name %}
-                <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-            {% endif %}
-        {% endfor %}
-    {% else %}
-        <p>No navigation items found.</p>
-    {% endif %}
->>>>>>> 90b6f2d (pushed)
 </div>

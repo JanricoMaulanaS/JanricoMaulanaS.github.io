@@ -1,123 +1,143 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navbar */
 .navbar {
-    background-color: #333;
-    overflow: hidden;
-    display: flex;
-    padding: 10px;
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  padding: 10px;
 }
 
 .navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
 }
 
 .navbar a:hover {
-    background-color: #575757;
+  background-color: #575757;
 }
 
-nav { 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 600%;
-    background-color: #333;
-    padding: 15px 20px;
-    z-index: 999;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 600%;
+  background-color: #333;
+  padding: 15px 20px;
+  z-index: 999;
 }
 
+/* Footer */
 footer {
-    background-color: #ffffff; /* Background putih */
-    color: #333333;
-    padding: 16px;
-    font-size: 14px;
-    text-align: center;
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); /* Shadow di atas footer */
-    margin: 30px -20px -20px -20px;
-  }
-  
-  .footer-content p {
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: #555555;
-  }
-  
-  .footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 8px;
-  }
-  
-  .footer-links a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-links a:hover {
-    color: #0056b3;
-  }
-  
-  .footer-social {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-  }
-  
-  .footer-social a {
-    color: #333333;
-    font-size: 18px;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-social a:hover {
-    color: #007bff;
-  }
-  
-  /* Responsif */
-  @media (max-width: 600px) {
-    .footer-links {
-      flex-direction: column;
-      gap: 8px;
-    }
-    .footer-social {
-      gap: 8px;
-    }
+  background-color: #ffffff; /* Background putih */
+  color: #333333;
+  padding: 16px;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); /* Shadow di atas footer */
+  margin: 30px -20px -20px -20px;
+}
 
-  }
-  /* Untuk layar kecil (HP) */
+.footer-content p {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555555;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #0056b3;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer-social a {
+  color: #333333;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #007bff;
+}
+
+/* Responsiveness */
+
+/* Untuk layar kecil (HP) */
 @media (max-width: 600px) {
-    body {
-        font-size: 14px;
-        padding: 10px;
-    }
-    .container {
-        flex-direction: column;
-    }
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-social {
+    gap: 8px;
+  }
 }
 
 /* Untuk layar sedang (Tablet) */
 @media (max-width: 1024px) {
-    body {
-        font-size: 16px;
-    }
+  body {
+    font-size: 16px;
+  }
 }
 
 /* Untuk layar besar (Laptop/PC) */
 @media (min-width: 1025px) {
-    body {
-        font-size: 18px;
-    }
+  body {
+    font-size: 18px;
+  }
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.friends-list {
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.friends-list a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.friends-list a:hover {
+  text-decoration: underline;
 }
