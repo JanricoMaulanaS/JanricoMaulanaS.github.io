@@ -3,7 +3,6 @@ layout : post
 title : "Layout dan Navigation"
 ---
 
-
 Penjelasan tentang Layout dan Navigation
 
 # **Layout dan Navigasi**

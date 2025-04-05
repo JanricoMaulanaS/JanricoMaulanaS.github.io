@@ -3,7 +3,6 @@ layout : post
 title : "Instalasi Ruby dan Jekyll"
 ---
 
-
 Penjelasan tentang instalasi ruby dan jekyll
 
 ---
