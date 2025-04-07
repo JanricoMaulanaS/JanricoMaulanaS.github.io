@@ -119,20 +119,5 @@ footer {
     font-size: 18px;
   }
 }
-.friends-list {
-  max-width: 600px;
-  margin: auto;
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-.friends-list a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-.friends-list a:hover {
-  text-decoration: underline;
-}
 
 /*# sourceMappingURL=styles.css.map */
