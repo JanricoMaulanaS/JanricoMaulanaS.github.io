@@ -1,16 +1,75 @@
----
-layout: default
-title: Blog
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <div class="navbar">
+    
+    <a href="/" >Home</a>
+    
+    <a href="/friends.html" >Friends</a>
+    
+    <a href="/blog.html" class="current">Blog</a>
+    
+</div>
 
-<h1>Blog</h1>
+    <h1>Blog</h1>
 
 <ul>
-    {% for post in site.posts %}
+    
         <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-            <p>{{ post.date | date_to_string }}</p>
-            <p>{{ post.excerpt }}</p>
+            <a href="/2025/03/20/html-link-dan-lists.html">HTML Link dan Lists</a>
+            <p>20 Mar 2025</p>
+            <p><p>Penjelasan tentang Link dan Lists pada HTML.</p>
+</p>
         </li>
-    {% endfor %}
+    
+        <li>
+            <a href="/2025/03/13/layout-dan-navigation.html">Layout dan Navigation</a>
+            <p>13 Mar 2025</p>
+            <p><p>Penjelasan tentang Layout dan Navigation</p>
+</p>
+        </li>
+    
+        <li>
+            <a href="/2025/03/06/markdown.html">Markdown</a>
+            <p>06 Mar 2025</p>
+            <p><p>Penjelasan tentang markdown</p>
+</p>
+        </li>
+    
+        <li>
+            <a href="/2025/02/20/instalasi-ruby-dan-jekyll.html">Instalasi Ruby dan Jekyll</a>
+            <p>20 Feb 2025</p>
+            <p><p>Penjelasan tentang instalasi ruby dan jekyll</p>
+</p>
+        </li>
+    
 </ul>
+
+    <footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <p>&copy; 2025 JanricoMaulanaS. All Rights Reserved.</p>
+            <div class="footer-social">
+                <a href="https://github.com/JanricoMaulanaS" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/janrico-maulana-sofyan" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com/ricoo.maulana" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
