@@ -12,8 +12,8 @@ body {
   display: flex;
   justify-content: center;
   padding: 10px 0;
-  width: 101%;
-  flex-wrap: wrap;
+  width: 100%;
+  flex-wrap: wrap; /* biar tetap horizontal di layar kecil */
 }
 
 .navbar a {
@@ -227,15 +227,13 @@ footer {
 }
 
 /* Responsiveness */
-
-/* Mobile */
 @media (max-width: 600px) {
   body {
     font-size: 14px;
     padding: 10px;
   }
 
-  /* biar navbar tetap horizontal */
+  /* Navbar tetap horizontal di HP */
   .navbar {
     flex-direction: row;
     flex-wrap: wrap;
@@ -266,14 +264,12 @@ footer {
   }
 }
 
-/* Tablet */
 @media (max-width: 1024px) {
   body {
     font-size: 16px;
   }
 }
 
-/* Desktop */
 @media (min-width: 1025px) {
   body {
     font-size: 18px;
