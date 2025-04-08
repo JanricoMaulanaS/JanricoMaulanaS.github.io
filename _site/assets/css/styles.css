@@ -6,13 +6,16 @@ body {
 }
 
 /* Navbar */
+/* Navbar */
 .navbar {
   background-color: #333;
-  overflow: hidden;
+  overflow-x: auto; /* biar scroll kalau sempit */
+  white-space: nowrap; /* mencegah turun baris */
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 10px 0;
-  width: 101%;
+  width: 100%;
+  flex-wrap: nowrap;
 }
 
 .navbar a {
@@ -20,8 +23,22 @@ body {
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
+  display: inline-block;
+  flex-shrink: 0; /* biar gak menyusut */
 }
 
+/* Responsive Mobile */
+@media (max-width: 600px) {
+  .navbar {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .navbar a {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+}
 .navbar a:hover {
   background-color: #575757;
 }
@@ -60,7 +77,7 @@ h3 {
   margin: 10px 0;
 }
 
-/*Friends Section */
+/* Friends Section */
 .friends-container {
   padding: 20px;
   border-radius: 16px;
@@ -117,7 +134,7 @@ h3 {
   text-decoration: underline;
 }
 
-/* Blog */
+/* Blog Section */
 .blog-title {
   font-size: 36px;
   font-weight: 700;
@@ -225,15 +242,17 @@ footer {
   color: #007bff;
 }
 
-/* Responsiv */
-/* Mobile */
+/* Responsiveness */
 @media (max-width: 600px) {
   body {
     font-size: 14px;
     padding: 10px;
   }
+  /* Navbar tetap horizontal di HP */
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .container {
     flex-direction: column;
@@ -254,13 +273,11 @@ footer {
     font-size: 18px;
   }
 }
-/* Tablet */
 @media (max-width: 1024px) {
   body {
     font-size: 16px;
   }
 }
-/* Desktop */
 @media (min-width: 1025px) {
   body {
     font-size: 18px;

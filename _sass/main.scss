@@ -6,14 +6,16 @@ body {
 }
 
 /* Navbar */
+/* Navbar */
 .navbar {
   background-color: #333;
-  overflow: hidden;
+  overflow-x: auto; /* biar scroll kalau sempit */
+  white-space: nowrap; /* mencegah turun baris */
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 10px 0;
   width: 100%;
-  flex-wrap: wrap; /* biar tetap horizontal di layar kecil */
+  flex-wrap: nowrap;
 }
 
 .navbar a {
@@ -21,6 +23,22 @@ body {
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
+  display: inline-block;
+  flex-shrink: 0; /* biar gak menyusut */
+}
+
+/* Responsive Mobile */
+@media (max-width: 600px) {
+  .navbar {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
 }
 
 .navbar a:hover {
