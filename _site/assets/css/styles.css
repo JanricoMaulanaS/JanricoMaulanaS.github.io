@@ -233,7 +233,9 @@ footer {
     padding: 10px;
   }
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .container {
     flex-direction: column;
