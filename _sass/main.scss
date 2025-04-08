@@ -8,23 +8,19 @@ body {
 /* Navbar */
 .navbar {
   background-color: #333;
+  overflow: hidden;
   display: flex;
-  flex-direction: row; /* Biar horizontal */
   justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  white-space: nowrap;
   padding: 10px 0;
+  width: 101%;
+  flex-wrap: nowrap;
 }
 
 .navbar a {
   color: white;
   padding: 14px 20px;
   text-decoration: none;
-  display: inline-block;
   text-align: center;
-  flex-shrink: 0;
 }
 
 .navbar a:hover {
@@ -33,25 +29,6 @@ body {
 
 .navbar a.current {
   background-color: #04AA6D;
-}
-
-/* Hilangin scrollbar */
-.navbar::-webkit-scrollbar {
-  display: none;
-}
-
-/* Responsiveness */
-@media (max-width: 600px) {
-  .navbar {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE 10+ */
-  }
-
-  .navbar::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-  }
 }
 
 /* Main Content */
@@ -250,13 +227,15 @@ footer {
 }
 
 /* Responsiveness */
+
+/* Mobile */
 @media (max-width: 600px) {
   body {
     font-size: 14px;
     padding: 10px;
   }
 
-  /* Navbar tetap horizontal di HP */
+  /* biar navbar tetap horizontal */
   .navbar {
     flex-direction: row;
     flex-wrap: wrap;
@@ -287,12 +266,14 @@ footer {
   }
 }
 
+/* Tablet */
 @media (max-width: 1024px) {
   body {
     font-size: 16px;
   }
 }
 
+/* Desktop */
 @media (min-width: 1025px) {
   body {
     font-size: 18px;
