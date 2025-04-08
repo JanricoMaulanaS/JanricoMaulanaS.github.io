@@ -13,6 +13,7 @@ body {
   justify-content: center;
   padding: 10px 0;
   width: 101%;
+  flex-wrap: wrap;
 }
 
 .navbar a {
@@ -60,7 +61,7 @@ h3 {
   margin: 10px 0;
 }
 
-/*Friends Section */
+/* Friends Section */
 .friends-container {
   padding: 20px;
   border-radius: 16px;
@@ -117,7 +118,7 @@ h3 {
   text-decoration: underline;
 }
 
-/* Blog */
+/* Blog Section */
 .blog-title {
   font-size: 36px;
   font-weight: 700;
@@ -225,7 +226,7 @@ footer {
   color: #007bff;
 }
 
-/* Responsiv */
+/* Responsiveness */
 
 /* Mobile */
 @media (max-width: 600px) {
@@ -235,7 +236,9 @@ footer {
   }
 
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .container {
