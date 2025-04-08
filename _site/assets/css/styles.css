@@ -1,13 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
   margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 /* Navbar */
@@ -15,39 +10,180 @@ img {
   background-color: #333;
   overflow: hidden;
   display: flex;
-  padding: 10px;
+  justify-content: center;
+  padding: 10px 0;
+  width: 101%;
 }
 
 .navbar a {
   color: white;
+  padding: 14px 20px;
   text-decoration: none;
-  padding: 10px 20px;
-  display: block;
+  text-align: center;
 }
 
 .navbar a:hover {
   background-color: #575757;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 600%;
-  background-color: #333;
-  padding: 15px 20px;
-  z-index: 999;
+.navbar a.current {
+  background-color: #04AA6D;
+}
+
+/* Main Content */
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h3 {
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.tools img {
+  margin: 10px;
+}
+
+.hobbies p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/*Friends Section */
+.friends-container {
+  padding: 20px;
+  border-radius: 16px;
+  margin: 20px;
+}
+
+.friends-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #141314;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.friends-subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #141314;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.friends-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.friend-card {
+  background-color: #ffffff;
+  padding: 14px 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-size: 18px;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.friend-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.friend-card a {
+  color: #141314;
+  text-decoration: none;
+}
+
+.friend-card a:hover {
+  text-decoration: underline;
+}
+
+/* Blog */
+.blog-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #141314;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.blog-subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #141314;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.blog-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+}
+
+.blog-card {
+  background-color: #ffffff;
+  padding: 18px 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.blog-card a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #141314;
+  text-decoration: none;
+}
+
+.blog-card a:hover {
+  text-decoration: underline;
+}
+
+.blog-card p {
+  margin: 6px 0;
+  color: #555;
+  font-size: 15px;
 }
 
 /* Footer */
 footer {
-  background-color: #ffffff; /* Background putih */
+  background-color: #ffffff;
   color: #333333;
   padding: 16px;
   font-size: 14px;
   text-align: center;
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); /* Shadow di atas footer */
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
   margin: 30px -20px -20px -20px;
+  width: 100%;
 }
 
 .footer-content p {
@@ -89,12 +225,15 @@ footer {
   color: #007bff;
 }
 
-/* Responsiveness */
-/* Untuk layar kecil (HP) */
+/* Responsiv */
+/* Mobile */
 @media (max-width: 600px) {
   body {
     font-size: 14px;
     padding: 10px;
+  }
+  .navbar {
+    flex-direction: column;
   }
   .container {
     flex-direction: column;
@@ -106,14 +245,22 @@ footer {
   .footer-social {
     gap: 8px;
   }
+  .friends-title,
+  .blog-title {
+    font-size: 28px;
+  }
+  .friends-subtitle,
+  .blog-subtitle {
+    font-size: 18px;
+  }
 }
-/* Untuk layar sedang (Tablet) */
+/* Tablet */
 @media (max-width: 1024px) {
   body {
     font-size: 16px;
   }
 }
-/* Untuk layar besar (Laptop/PC) */
+/* Desktop */
 @media (min-width: 1025px) {
   body {
     font-size: 18px;
