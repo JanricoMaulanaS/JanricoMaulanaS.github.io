@@ -9,19 +9,21 @@ body {
 .navbar {
   background-color: #333;
   display: flex;
-  justify-content: flex-start;
-  padding: 10px 0;
+  flex-direction: row; /* Biar horizontal */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   overflow-x: auto;
   white-space: nowrap;
-  width: 100%;
+  padding: 10px 0;
 }
 
 .navbar a {
   color: white;
-  padding: 12px 16px;
+  padding: 14px 20px;
   text-decoration: none;
-  text-align: center;
   display: inline-block;
+  text-align: center;
   flex-shrink: 0;
 }
 
@@ -31,6 +33,11 @@ body {
 
 .navbar a.current {
   background-color: #04AA6D;
+}
+
+/* Hilangin scrollbar */
+.navbar::-webkit-scrollbar {
+  display: none;
 }
 
 /* Responsiveness */
