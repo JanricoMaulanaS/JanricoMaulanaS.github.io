@@ -5,8 +5,6 @@ title: "HTML Link dan Lists"
 
 Penjelasan tentang Link dan Lists pada HTML.
 
-![HTML Link dan Lists](/assets/image/hahahha.jpg)
-
 # **Penjelasan Lengkap tentang Link dan Lists pada HTML**
 
 Dalam **HTML** (*HyperText Markup Language*), **link** dan **lists** adalah elemen dasar yang sangat penting dalam membuat struktur dan navigasi halaman web. Berikut adalah penjelasan lengkap tentang kedua elemen ini:
