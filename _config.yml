@@ -1,0 +1,13 @@
+favicon: /assets/favicon.ico
+permalink: /:year/:month/:day/:title
+
+sass:
+  sass_dir: assets
+
+url: "https://JanricoMaulanaS.github.io"
+
+plugins:
+ - jekyll-feed
+ - jekyll-sitemap
+ - jekyll-seo-tag
+

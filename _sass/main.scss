@@ -1,9 +1,13 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: Georgia, serif;
+  background-image: url('/LLL.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #000000;
 }
+
 
 /* Navbar */
 .navbar {
@@ -11,7 +15,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 10px 0;
-  width: 101%;
+  width: 100%;
   flex-wrap: wrap;
 }
 
@@ -27,7 +31,7 @@ body {
 }
 
 .navbar a.current {
-  background-color: #04AA6D;
+  background-color: #99aa04;
 }
 
 /* Main Content */
@@ -261,3 +265,4 @@ footer {
     font-size: 18px;
   }
 }
+
