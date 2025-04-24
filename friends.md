@@ -5,8 +5,7 @@ title: Friends
 
 <div class="friends-container">
   <h1 class="friends-title">
-    <i class="fas fa-user-friends"></i> Friends Pagee
-  </h1>
+    <i class="fas fa-user-friends"></i> Friends Page  </h1>
   <p class="friends-subtitle">Teman-Teman Saya di Kelas :</p>
 
   <ol class="friends-list">
