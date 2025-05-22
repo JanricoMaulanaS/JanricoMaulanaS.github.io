@@ -6,15 +6,25 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   color: #000000;
+  overflow-x: hidden;
+}
+
+/* Container universal */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Navbar */
 .navbar {
   background-color: #333;
+  padding: 20px 0;
+}
+
+.navbar .container {
   display: flex;
   justify-content: center;
-  padding: 10px 0;
-  width: 100%;
   flex-wrap: wrap;
 }
 
@@ -34,11 +44,9 @@ body {
 }
 
 /* Main Content */
-.container {
-  max-width: 960px;
-  margin: auto;
-  padding: 40px 20px;
+.content {
   text-align: center;
+  padding: 40px 20px;
 }
 
 h1 {
@@ -67,7 +75,7 @@ h3 {
 .friends-container {
   padding: 20px;
   border-radius: 16px;
-  margin: 20px;
+  margin: 20px auto;
 }
 
 .friends-title {
@@ -76,8 +84,6 @@ h3 {
   color: #141314;
   text-align: center;
   margin-top: 30px;
-  display: flex;
-  gap: 10px;
   padding-left: 20px;
 }
 
@@ -127,8 +133,6 @@ h3 {
   color: #141314;
   text-align: center;
   margin-top: 30px;
-  display: flex;
-  gap: 10px;
   padding-left: 20px;
 }
 
@@ -185,7 +189,6 @@ footer {
   font-size: 14px;
   text-align: center;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
-  margin: 30px -20px -20px -20px;
   width: 100%;
 }
 
@@ -200,6 +203,7 @@ footer {
   justify-content: center;
   gap: 12px;
   margin-bottom: 8px;
+  flex-wrap: wrap;
 }
 
 .footer-links a {
@@ -216,6 +220,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .footer-social a {
@@ -228,36 +233,28 @@ footer {
   color: #007bff;
 }
 
-.container {
-  flex-direction: column;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-links,
+  .footer-social {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .friends-title,
+  .blog-title {
+    font-size: 28px;
+  }
+  .friends-subtitle,
+  .blog-subtitle {
+    font-size: 18px;
+  }
 }
-
-.footer-links {
-  flex-direction: column;
-  gap: 8px;
-}
-
-.footer-social {
-  gap: 8px;
-}
-
-.friends-title,
-.blog-title {
-  font-size: 28px;
-}
-
-.friends-subtitle,
-.blog-subtitle {
-  font-size: 18px;
-}
-
-/* Tablet */
+/* Font size */
 @media (max-width: 1024px) {
   body {
     font-size: 16px;
   }
 }
-/* Desktop */
 @media (min-width: 1025px) {
   body {
     font-size: 18px;
